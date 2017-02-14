@@ -17,6 +17,9 @@
 # .node-version file
 .node-version
 
+# npm debug output
+npm-debug.log
+
 # .ruby-version file
 .ruby-version
 
