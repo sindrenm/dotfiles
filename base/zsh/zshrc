@@ -1,0 +1,8 @@
+source $HOME/.config/zsh/zplug.zsh
+
+source $HOME/.config/zsh/theme.zsh
+
+source $HOME/.config/zsh/env.zsh
+source $HOME/.config/zsh/functions.zsh
+source $HOME/.config/zsh/aliases.zsh
+source $HOME/.config/zsh/keybindings.zsh

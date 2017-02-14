@@ -1,0 +1,22 @@
+[core]
+  excludesfile = $HOME/.config/git/ignore
+  pager = less -FRSX
+  editor = nvim
+
+[github]
+  user = sindrenm
+
+[push]
+  default = simple
+
+[clean]
+  requireForce = false
+
+[include]
+  path = aliases
+  path = colors
+  path = lfs
+  path = user
+
+[url "git@github.com:"]
+  insteadOf = github:

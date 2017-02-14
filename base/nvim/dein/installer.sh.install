@@ -1,0 +1,3 @@
+#! /bin/zsh
+
+sh ./installer.sh $HOME/.config/nvim/dein/packages

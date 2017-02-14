@@ -1,0 +1,5 @@
+[color "diff"]
+  whitespace = red reverse
+
+[color]
+  ui = auto

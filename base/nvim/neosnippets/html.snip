@@ -1,0 +1,15 @@
+snippet himport
+  <link rel="import" href="${1:path/to/file}.html">${2}
+
+snippet dom
+  <dom-module id="${1:my-module}">
+    <template>
+      ${2}
+    </template>
+
+    <script>
+      Polymer({
+        is: "$1",
+      });
+    </script>
+  </dom-module>

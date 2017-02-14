@@ -1,0 +1,30 @@
+# Android Studio project files
+*.iml
+.idea/
+
+# KAnnotator annotations
+/.kannotations/
+
+# Vim swap files
+*.swp
+
+# LibreOffice lock files
+.~lock.*
+
+# Exuberant ctags
+/tags
+
+# .node-version file
+.node-version
+
+# .ruby-version file
+.ruby-version
+
+# local RSpec config
+.rspec-local
+
+# Direnv environment file
+.envrc
+
+# Vim projections from projectionist.vim
+.projections.json
