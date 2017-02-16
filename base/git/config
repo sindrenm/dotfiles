@@ -22,3 +22,6 @@
 
 [url "git@github.com:hyperoslo/"]
   insteadOf = hyper:
+
+[url "git@heroku.com:"]
+  insteadOf = heroku:
