@@ -57,7 +57,7 @@ call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
 
 " Color schemes
-call dein#add('mhartington/oceanic-next')
+call dein#add('altercation/vim-colors-solarized')
 
 " Sharing
 call dein#add('mattn/gist-vim')
