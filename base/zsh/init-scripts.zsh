@@ -6,7 +6,7 @@ eval "$(nodenv init -)"
 
 # Initialize wd
 wd() {
-  . ~/bin/wd/wd.sh
+  . /usr/share/wd/wd.sh
 }
 
 # Initialize direnv
