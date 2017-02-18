@@ -3,7 +3,7 @@
 .idea/
 
 # KAnnotator annotations
-/.kannotations/
+.kannotations/
 
 # Vim swap files
 *.swp
