@@ -2,7 +2,7 @@ source $HOME/.config/nvim/dein/init.vim
 source $HOME/.config/nvim/theme.vim
 
 set backupcopy=yes
-set cursorline
+set nocursorline
 set hidden
 set number
 set mouse=
