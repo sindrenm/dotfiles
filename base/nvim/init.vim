@@ -22,6 +22,9 @@ xmap <C-k> <Plug>(neosnippet_expand_target)
 
 map <C-Space> :CtrlSpace<CR>
 
+nmap <C-n> :cnext<CR>
+nmap <C-p> :cprev<CR>
+
 autocmd! BufWritePost * Neomake
 
 " TODO: Somehow enable only for Angular templates.
