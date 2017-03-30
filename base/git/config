@@ -20,6 +20,9 @@
 [url "git@github.com:"]
   insteadOf = github:
 
+[url "git@github.com:sindrenm/"]
+  insteadOf = sindrenm:
+
 [url "git@github.com:hyperoslo/"]
   insteadOf = hyper:
 
