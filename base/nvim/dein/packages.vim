@@ -58,6 +58,7 @@ call dein#add('Shougo/neosnippet-snippets')
 
 " Color schemes
 call dein#add('altercation/vim-colors-solarized')
+call dein#add('juanedi/predawn.vim')
 
 " Sharing
 call dein#add('mattn/gist-vim')
