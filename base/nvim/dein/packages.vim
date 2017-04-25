@@ -1,6 +1,8 @@
 " Core feature enhancements
 call dein#add('itchyny/lightline.vim')
 call dein#add('tpope/vim-repeat')
+call dein#add('junegunn/goyo.vim')
+call dein#add('junegunn/limelight.vim')
 call dein#add('tpope/vim-speeddating')
 
 " Language support
