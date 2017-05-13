@@ -31,3 +31,6 @@ npm-debug.log
 
 # Vim projections from projectionist.vim
 .projections.json
+
+# Dolphin directory configuration
+.directory
