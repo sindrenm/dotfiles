@@ -2,14 +2,23 @@ snippet himport
   <link rel="import" href="${1:path/to/file}.html">${2}
 
 snippet dom
+  <link rel="import" href="https://polygit.org/components/polymer/polymer-element.html">
+
   <dom-module id="${1:my-module}">
     <template>
-      ${2}
+      <style>
+      </style>
+
+      ${3}
     </template>
 
     <script>
-      Polymer({
-        is: "$1",
-      });
+      class ${2:MyModule} extends Polymer.Element {
+
+        static get is() { return '$1'; }
+
+      }
+
+      customElements.define($2.is, $2);
     </script>
   </dom-module>
