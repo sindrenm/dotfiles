@@ -6,3 +6,5 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export EDITOR=nvim
 
 export TERM=xterm-256color
+
+export ANDROID_EMULATOR_USE_SYSTEM_LIBS=1
