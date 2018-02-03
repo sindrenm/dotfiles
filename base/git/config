@@ -23,8 +23,5 @@
 [url "git@github.com:sindrenm/"]
   insteadOf = sindrenm:
 
-[url "git@github.com:hyperoslo/"]
-  insteadOf = hyper:
-
 [url "git@heroku.com:"]
   insteadOf = heroku:
