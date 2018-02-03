@@ -23,5 +23,8 @@
 [url "git@github.com:sindrenm/"]
   insteadOf = sindrenm:
 
+[url "git@github.schibsted.io:finn/"]
+  insteadOf = finn:
+
 [url "git@heroku.com:"]
   insteadOf = heroku:
