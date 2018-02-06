@@ -11,3 +11,8 @@ source $HOME/.config/zsh/aliases.zsh
 source $HOME/.config/zsh/keybindings.zsh
 
 source $HOME/.config/zsh/init-scripts.zsh
+
+privateZsh=$HOME/.config/zsh/private.zsh.zsh
+if [ -e $privateZsh ] ; then
+  source $privateZsh
+fi
