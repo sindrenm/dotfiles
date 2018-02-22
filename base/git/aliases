@@ -7,6 +7,7 @@
   df          = diff
   lg          = log --graph --pretty=format:'%C(red)%h%Creset %C(green)%ad%Creset | %s%C(yellow)%d%Creset %C(bold blue)<%an>%Creset' --date=short
   last        = "!f() { git lg --max-count $1; }; f"
+  po          = "!git push -u origin `git rev-parse --abbrev-ref HEAD`"
   pr          = pull --rebase --ff-only
   stag        = push staging develop:master
   prod        = push production master:master
