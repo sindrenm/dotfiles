@@ -17,6 +17,9 @@
   path = lfs
   path = user
 
+[merge]
+  conflictstyle = diff3
+
 [url "git@github.com:"]
   insteadOf = github:
 
