@@ -16,6 +16,7 @@
   path = colors
   path = lfs
   path = user
+  path = private
 
 [merge]
   conflictstyle = diff3
