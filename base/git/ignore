@@ -1,6 +1,6 @@
 # Android Studio project files
 *.iml
-.idea/
+.idea/*
 
 # KAnnotator annotations
 .kannotations/
