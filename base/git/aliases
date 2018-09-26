@@ -2,7 +2,7 @@
   co          = checkout
   cb          = checkout -b
   ci          = commit -v
-  st          = status -s
+  st          = status
   br          = branch -v
   df          = diff
   lg          = log --graph --pretty=format:'%C(red)%h%Creset %C(green)%ad%Creset | %s%C(yellow)%d%Creset %C(bold blue)<%an>%Creset' --date=short
