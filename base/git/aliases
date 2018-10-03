@@ -3,7 +3,7 @@
   cb          = checkout -b
   ci          = commit -v
   st          = status
-  br          = branch -v
+  br          = branch -vv
   df          = diff
   lg          = log --graph --pretty=format:'%C(red)%h%Creset %C(green)%ad%Creset | %s%C(yellow)%d%Creset %C(bold blue)<%an>%Creset' --date=short
   last        = "!f() { git lg --max-count $1; }; f"
