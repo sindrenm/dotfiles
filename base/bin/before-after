@@ -1,0 +1,8 @@
+#! /usr/bin/bash
+
+# Uses ImageMagick to create a before-and-after picture based off of two images
+# called before.png and after.png. The output file will be called
+# before_output.png and will be the two images joined together with a gray 5 px
+# wide separator in between them.
+
+convert before.png \( after.png -background gray -splice 5x0 \) +append before_after.png
