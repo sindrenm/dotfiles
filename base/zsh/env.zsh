@@ -1,6 +1,6 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 
-export PATH="$HOME/.pyenv/bin:$PATH"
+export PATH="$(pyenv root)/shims:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/opt/android-sdk/platform-tools:$PATH"
 
