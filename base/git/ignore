@@ -2,6 +2,9 @@
 *.iml
 .idea/*
 
+# Gradle local properties
+local.properties
+
 # KAnnotator annotations
 .kannotations/
 
