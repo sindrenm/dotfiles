@@ -2,6 +2,7 @@
   co          = checkout
   cb          = checkout -b
   ci          = commit -v
+  cp          = cherry-pick
   st          = status
   br          = branch -vv
   df          = diff
