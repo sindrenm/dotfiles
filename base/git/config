@@ -5,6 +5,9 @@
 [github]
   user = sindrenm
 
+[pull]
+  rebase = false
+
 [push]
   default = simple
 
