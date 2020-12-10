@@ -49,7 +49,6 @@ call dein#add('ConradIrwin/vim-comment-object')
 call dein#add('jceb/vim-textobj-uri')
 call dein#add('kana/vim-textobj-fold')
 call dein#add('kana/vim-textobj-user')
-call dein#add('killphi/vim-textobj-signify-hunk')
 call dein#add('nelstrom/vim-textobj-rubyblock')
 
 " Version control
