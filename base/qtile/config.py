@@ -50,13 +50,8 @@ keys = [
     Key([mod], "space", lazy.layout.next()),
     Key([mod, "shift"], "space", lazy.layout.flip()),
 
-    # Toggle between split and unsplit sides of stack.
-    # Split = all windows displayed
-    # Unsplit = 1 window displayed, like Max layout, but still with
-    # multiple stack panes
-    Key([mod, "shift"], "Return", lazy.layout.toggle_split(),
-        desc="Toggle between split and unsplit sides of stack"),
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
+    Key([mod, "shift"], "Return", lazy.spawn("rofi -show drun")),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
@@ -64,8 +59,6 @@ keys = [
 
     Key([mod, "control"], "r", lazy.restart(), desc="Restart qtile"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown qtile"),
-    Key([mod], "r", lazy.spawncmd(),
-        desc="Spawn a command using a prompt widget"),
 ]
 
 groups = [Group(i) for i in "123456"]

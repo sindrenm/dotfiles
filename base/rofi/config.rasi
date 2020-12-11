@@ -1,0 +1,4 @@
+configuration {
+  modi: "window,drun,run,ssh";
+  theme: "/usr/share/rofi/themes/Paper.rasi";
+}
