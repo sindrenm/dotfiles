@@ -83,6 +83,11 @@ layouts = [
         border_focus="#FFFFFF",
     ),
     layout.Max(),
+    layout.Bsp(
+        margin=8,
+        border_normal="#666666",
+        border_focus="#FFFFFF",
+    ),
 ]
 
 widget_defaults = dict(
