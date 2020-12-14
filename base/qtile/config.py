@@ -61,41 +61,28 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown qtile"),
 ]
 
-groups = [Group(i) for i in "123456"]
+groupsDict = {
+    1: "DEV",
+    2: "WEB",
+    3: "CHAT",
+    4: "GAME",
+}
 
-for i in groups:
+groups = [Group(name) for name in groupsDict.values()]
+
+for i, name in groupsDict.items():
     keys.extend([
-        # mod1 + letter of group = switch to group
-        Key([mod], i.name, lazy.group[i.name].toscreen(),
-            desc="Switch to group {}".format(i.name)),
-
-        # mod1 + shift + letter of group = switch to & move focused window to group
-        Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True),
-            desc="Switch to & move focused window to group {}".format(i.name)),
-        # Or, use below if you prefer not to switch to that group.
-        # # mod1 + shift + letter of group = move focused window to group
-        # Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
-        #     desc="move focused window to group {}".format(i.name)),
+        Key([mod], str(i), lazy.group[name].toscreen(toggle=False)),
+        Key([mod, "shift"], str(i), lazy.window.togroup(name, switch_group=True)),
     ])
 
 layouts = [
-    layout.Max(),
-    # layout.Stack(num_stacks=2),
-    # Try more layouts by unleashing below layouts.
-    # layout.Bsp(),
-    # layout.Columns(),
-    # layout.Matrix(),
     layout.MonadTall(
         margin=8,
         border_normal="#666666",
         border_focus="#FFFFFF",
     ),
-    # layout.MonadWide(),
-    # layout.RatioTile(),
-    # layout.Tile(),
-    # layout.TreeTab(),
-    # layout.VerticalTile(),
-    # layout.Zoomy(),
+    layout.Max(),
 ]
 
 widget_defaults = dict(
@@ -107,23 +94,43 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
+        wallpaper="~/Pictures/dwt-wallpapers/0019.jpg",
+        wallpaper_mode="fill",
         top=bar.Bar(
             [
+                widget.Spacer(16),
                 widget.CurrentLayout(),
                 widget.GroupBox(),
                 widget.Prompt(),
                 widget.WindowName(),
-                widget.Chord(
-                    chords_colors={
-                        'launch': ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
-                ),
+                widget.Spacer(8),
+                widget.TextBox("NET "),
+                widget.Net(interface="wlp0s20f3", format="{down} ↓↑ {up}", padding=0),
+                widget.Spacer(8),
+                widget.TextBox("MEM "),
+                widget.Memory(format="{MemUsed}M / {MemTotal}M"),
+                widget.Spacer(8),
+                widget.TextBox("CPU "),
+                widget.CPU(format="{load_percent}%"),
+                widget.Spacer(8),
+                widget.TextBox("VOL "),
+                widget.Volume(padding=0),
+                widget.Spacer(8),
+                widget.TextBox("·"),
+                widget.Spacer(8),
+                widget.Clock(format='%A, %B %-d, %Y, %H:%M:%S'),
+                widget.Spacer(8),
+                widget.TextBox("·"),
+                widget.Spacer(8),
                 widget.Systray(),
-                widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
-                widget.QuickExit(),
+                widget.Spacer(8),
+                widget.TextBox("·"),
+                widget.Spacer(8),
+                widget.QuickExit(default_text="[ logout ]"),
+                widget.Spacer(16),
             ],
             24,
+            opactity=0.2,
         ),
     ),
 ]
