@@ -50,6 +50,16 @@ keys = [
     Key([mod], "space", lazy.layout.next()),
     Key([mod, "shift"], "space", lazy.layout.flip()),
 
+    # Screenshots
+    Key(
+        ["control"], "Print",
+        lazy.spawn("scrot -e 'xclip -selection clipboard -target image/png -i $f'")
+    ),
+    Key(
+        ["control", "shift"], "Print",
+        lazy.spawn("scrot -s -e 'xclip -selection clipboard -target image/png -i $f'")
+    ),
+
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod, "shift"], "Return", lazy.spawn("rofi -show drun")),
 
