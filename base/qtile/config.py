@@ -88,12 +88,16 @@ for i, name in groupsDict.items():
 
 layouts = [
     layout.MonadTall(
+        name="Monad (tall)",
         margin=8,
         border_normal="#666666",
         border_focus="#FFFFFF",
     ),
-    layout.Max(),
+    layout.Max(
+        name="Max",
+    ),
     layout.Bsp(
+        name="Bsp",
         margin=8,
         border_normal="#666666",
         border_focus="#FFFFFF",
@@ -119,6 +123,8 @@ screens = [
                 widget.TextBox("·"),
                 widget.Spacer(8),
                 widget.CurrentLayout(),
+                widget.Spacer(8),
+                widget.TextBox("·"),
                 widget.Spacer(8),
                 widget.WindowName(),
                 widget.Spacer(8),
