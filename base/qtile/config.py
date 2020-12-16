@@ -114,9 +114,12 @@ screens = [
         top=bar.Bar(
             [
                 widget.Spacer(16),
-                widget.CurrentLayout(),
                 widget.GroupBox(),
-                widget.Prompt(),
+                widget.Spacer(8),
+                widget.TextBox("·"),
+                widget.Spacer(8),
+                widget.CurrentLayout(),
+                widget.Spacer(8),
                 widget.WindowName(),
                 widget.Spacer(8),
                 widget.TextBox("NET "),
