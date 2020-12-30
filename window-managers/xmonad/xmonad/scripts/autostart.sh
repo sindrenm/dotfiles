@@ -44,7 +44,7 @@ run volumeicon &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
 # Run and configure the Picom compositor
-picom --config $HOME/.config/picom.conf &
+picom --config $HOME/.config/xmonad/scripts/picom.conf &
 
 # Restore wallpaper
 nitrogen --restore &
