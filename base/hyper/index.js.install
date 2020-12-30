@@ -1,3 +1,0 @@
-#! /bin/zsh
-
-ln -sf $HOME/.config/hyper/index.js $HOME/.hyper.js
