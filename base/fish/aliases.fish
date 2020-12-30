@@ -5,6 +5,8 @@ alias tree='tree -C'
 alias less='less -R'
 alias g=git
 
-# --- LS SHORTCUTS -------------------------------------------------------------
+# --- LS (EXA) SHORTCUTS -------------------------------------------------------
 
-alias l='ls -l'
+alias ls='exa'
+alias l='exa --long --git'
+alias la='exa --long'
