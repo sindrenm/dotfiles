@@ -1,0 +1,3 @@
+#! /usr/bin/bash
+
+ln -fs $HOME/.config/xmonad $HOME/.xmonad
