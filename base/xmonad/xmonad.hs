@@ -29,9 +29,14 @@ import XMonad.Layout.Spiral(spiral)
 import XMonad.Layout.ThreeColumns
 
 import XMonad.Util.EZConfig (additionalKeys, additionalMouseBindings)
-import XMonad.Util.Run(spawnPipe)
+import XMonad.Util.NamedWindows (getName)
+import XMonad.Util.Run(safeSpawn, spawnPipe)
 
-import Control.Monad (liftM2)
+import Control.Monad (forM_, join, liftM2)
+
+import Data.List (sortBy)
+import Data.Function (on)
+
 import Graphics.X11.ExtraTypes.XF86
 
 import qualified Codec.Binary.UTF8.String as UTF8
@@ -62,11 +67,11 @@ myModMask = mod4Mask
 myFocusFollowsMouse = False
 myBorderWidth = 2
 myWorkspaces =
-  [ "1: DEV"     -- terminal
-  , "2: WWW"     -- browser
-  , "3: FILES"   -- file manager
-  , "4: CHAT"    -- chat
-  , "5: MEDIA" ] -- media
+  [ "CODE"
+  , "WWW"
+  , "FILES"
+  , "CHAT"
+  , "MEDIA" ]
 
 myBaseConfig = desktopConfig
 
@@ -228,28 +233,40 @@ myKeys conf @ (XConfig {XMonad.modMask = modMask}) = M.fromList $
   , (f, m) <- [ (W.greedyView, 0), (W.shift, shiftMask)
               , (\i -> W.greedyView i . W.shift i, shiftMask)] ]
 
+myLogFileWindowTitle = "/tmp/.xmonad-title-log"
+
+eventLogHook = do
+  winset <- gets windowset
+  title <- maybe (return "") (fmap show . getName) . W.peek $ winset
+
+  io $ appendFile myLogFileWindowTitle (title ++ "\n")
+
 main :: IO ()
 main = do
-    dbus <- D.connectSession
+  -- Create log files (named pipes) for Polybar to consume (populated in eventLogHook)
+  spawn $ "mkfifo " ++ myLogFileWindowTitle
 
-    -- Request access to the DBus name
-    D.requestName dbus (D.busName_ "org.xmonad.Log")
-      [ D.nameAllowReplacement
-      , D.nameReplaceExisting
-      , D.nameDoNotQueue ]
+  -- Request access to the DBus name
+  dbus <- D.connectSession
 
-    xmonad . ewmh $
-        myBaseConfig
+  D.requestName dbus (D.busName_ "org.xmonad.Log")
+    [ D.nameAllowReplacement
+    , D.nameReplaceExisting
+    , D.nameDoNotQueue ]
 
-        { startupHook = myStartupHook
-        , layoutHook = gaps [(U,35), (D,5), (R,5), (L,5)] $ myLayout ||| layoutHook myBaseConfig
-        , manageHook = manageSpawn <+> myManageHook <+> manageHook myBaseConfig
-        , modMask = myModMask
-        , borderWidth = myBorderWidth
-        , handleEventHook    = handleEventHook myBaseConfig <+> fullscreenEventHook
-        , focusFollowsMouse = myFocusFollowsMouse
-        , workspaces = myWorkspaces
-        , focusedBorderColor = myFocusedBorderColor
-        , normalBorderColor = myNormalBorderColor
-        , keys = myKeys
-        , mouseBindings = myMouseBindings }
+  xmonad . ewmh $
+    myBaseConfig
+
+    { startupHook = myStartupHook
+    , layoutHook = gaps [(U,35), (D,5), (R,5), (L,5)] $ myLayout ||| layoutHook myBaseConfig
+    , manageHook = manageSpawn <+> myManageHook <+> manageHook myBaseConfig
+    , logHook = eventLogHook
+    , modMask = myModMask
+    , borderWidth = myBorderWidth
+    , handleEventHook    = handleEventHook myBaseConfig <+> fullscreenEventHook
+    , focusFollowsMouse = myFocusFollowsMouse
+    , workspaces = myWorkspaces
+    , focusedBorderColor = myFocusedBorderColor
+    , normalBorderColor = myNormalBorderColor
+    , keys = myKeys
+    , mouseBindings = myMouseBindings }

@@ -1,4 +1,4 @@
-#! /usr/bin/env sh
+#! /bin/bash
 
 # More info : https://github.com/jaagr/polybar/wiki
 
@@ -8,8 +8,5 @@ killall -q polybar
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar > /dev/null; do sleep 1; done
 
-monitors=$(xrandr --query | grep " connected" | cut -d " " -f1)
-
-for monitor in $monitors; do
-  MONITOR=$monitor polybar --reload mainbar-xmonad -c ~/.config/polybar/config &
-done
+# Launch polybar for the main screen only
+MONITOR=DP2 polybar --reload xmonad-main -c ~/.config/polybar/config &

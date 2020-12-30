@@ -16,7 +16,7 @@ setxkbmap -option compose:caps
 $HOME/.config/xrandr/home-xps13-ext.sh &
 
 # Launch and configure Polybar
-$HOME/.config/polybar/launch.sh &
+$HOME/.config/polybar/launch-single-main.sh &
 
 # Set a proper default cursor
 xsetroot -cursor_name left_ptr &
