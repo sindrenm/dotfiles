@@ -126,10 +126,13 @@ myKeys conf @ (XConfig {XMonad.modMask = modMask}) = M.fromList $
   [ ((modMask, xK_f), sendMessage $ Toggle NBFULL)
   , ((modMask, xK_q), kill)
   , ((modMask, xK_v), spawn $ "pavucontrol")
-  , ((modMask, xK_p), spawn $ "rofi -show run")
   , ((modMask, xK_Escape), spawn $ "arcolinux-logout")
   , ((modMask, xK_Return), spawn $ "alacritty")
   , ((modMask, xK_w), spawn $ "firefox")
+
+  -- SUPER + ALT KEYS
+
+  , ((modMask .|. mod1Mask , xK_Return), spawn $ "rofi -show run")
 
   -- SUPER + SHIFT KEYS
 
