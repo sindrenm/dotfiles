@@ -91,7 +91,8 @@ myManageHook = composeAll . concat $
       [ "Arandr"
       , "Arcolinux-tweak-tool.py"
       , "Arcolinux-welcome-app.py"
-      , "Galculator" ]
+      , "Galculator"
+      , "scrcpy" ]
 
     titles =
       [ "Downloads"
