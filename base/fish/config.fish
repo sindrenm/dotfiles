@@ -4,3 +4,5 @@ source $HOME/.config/fish/init-scripts.fish
 
 # Init Starship prompt
 starship init fish | source
+
+neofetch
