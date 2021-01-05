@@ -69,7 +69,6 @@ myBorderWidth = 2
 myWorkspaces =
   [ "CODE"
   , "WWW"
-  , "FILES"
   , "CHAT"
   , "MEDIA" ]
 
