@@ -2,6 +2,9 @@
   pager = less -FRSX
   editor = nvim
 
+[init]
+  defaultBranch = main
+
 [github]
   user = sindrenm
 
