@@ -30,6 +30,9 @@ run nm-applet &
 # Show Pamac int he bar
 run pamac-tray &
 
+# Run the clipboard manager
+run xfce4-clipman &
+
 # Launch the Xfce power manager
 #run xfce4-power-manager &
 
