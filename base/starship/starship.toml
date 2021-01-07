@@ -1,2 +1,5 @@
 [java]
 disabled = true
+
+[gcloud]
+disabled = true
