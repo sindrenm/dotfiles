@@ -1,0 +1,5 @@
+# Direnv environment file
+.envrc
+
+# Vim swap files
+*.swp

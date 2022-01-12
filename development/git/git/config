@@ -1,0 +1,24 @@
+[include]
+  path = aliases
+  path = colors
+  path = github
+  path = private
+
+[core]
+  pager = less -FRSX
+  editor = nvim
+
+[init]
+  defaultBranch = main
+
+[push]
+  default = simple
+
+[pull]
+  rebase = false
+
+[clean]
+  requireForce = false
+
+[merge]
+  conflictstyle = diff3
