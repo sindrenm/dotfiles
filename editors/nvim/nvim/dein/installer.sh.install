@@ -1,0 +1,5 @@
+#! /bin/sh
+
+echo "Installing dein for managing Neovim plugins."
+
+sh ./installer.sh $HOME/.config/nvim/dein/plugins
