@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ln -s $HOME/.config/x11/resources $HOME/.Xresources
