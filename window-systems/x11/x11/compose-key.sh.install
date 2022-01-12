@@ -1,0 +1,4 @@
+#! /bin/sh
+
+sh ./compose-key.sh
+rm ./compose-key.sh
