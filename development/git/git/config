@@ -8,6 +8,15 @@
   pager = less -FRSX
   editor = nvim
 
+[commit]
+  gpgsign = true
+
+[tag]
+  gpgsign = true
+
+[gpg]
+  format = ssh
+
 [init]
   defaultBranch = main
 

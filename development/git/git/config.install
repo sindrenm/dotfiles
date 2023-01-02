@@ -1,4 +1,4 @@
 #! /bin/sh
 
 echo "Git configuration installed."
-echo "Remember to configure user.email and user.name!"
+echo "Remember to configure user.email, user.name and user.signingkey!"
