@@ -1,0 +1,25 @@
+# Compilation installation path.
+# Supports environment variable expansions using ${VARIBLE}
+install_path: ${HOME}/.config
+
+# The file suffix used for override files
+override_suffix: override
+
+# The file suffix to use for installation files
+install_suffix: install
+
+groups:
+  - development/git
+  - editors/nvim
+  - shells/fish
+  - terminals/alacritty
+  - window-managers/i3
+  - window-systems/x11
+
+profiles:
+  sindrenm-komplett:
+    - development/git
+    - editors/nvim
+    - shells/fish
+    - terminals/alacritty
+    - window-systems/x11
