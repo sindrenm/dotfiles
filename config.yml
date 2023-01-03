@@ -23,3 +23,10 @@ profiles:
     - shells/fish
     - terminals/alacritty
     - window-systems/x11
+
+  sindrenm-sats:
+    - development/git
+    - editors/nvim
+    - shells/fish
+    - terminals/alacritty
+    - window-systems/x11
