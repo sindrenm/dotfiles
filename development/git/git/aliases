@@ -13,3 +13,4 @@
   pr = pull --rebase --ff-only
   dfc = diff --cached
   rob = "!f() { git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done }; f"
+  tags = tag --list --sort=-creatordate
