@@ -2,4 +2,4 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-colorscheme wombat
+colorscheme darcula

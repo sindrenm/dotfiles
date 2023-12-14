@@ -1,5 +1,5 @@
 " Color schemes
-call dein#add('sindrenm/vim-wombat-scheme')
+call dein#add('doums/darcula')
 
 " Core feature enhancements
 call dein#add('tpope/vim-commentary')
