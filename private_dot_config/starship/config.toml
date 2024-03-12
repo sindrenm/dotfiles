@@ -1,0 +1,8 @@
+[java]
+disabled = true
+
+[kotlin]
+disabled = true
+
+[gcloud]
+disabled = true
