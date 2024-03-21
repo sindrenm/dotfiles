@@ -1,0 +1,37 @@
+[diff]
+  external = difft
+
+[include]
+  path = aliases
+  path = colors
+  path = github
+  path = private
+
+[core]
+  pager = less -FRSX
+  editor = nvim
+
+[commit]
+  gpgsign = true
+
+[tag]
+  gpgsign = true
+
+[gpg]
+  format = ssh
+
+[init]
+  defaultBranch = main
+
+[push]
+  default = simple
+  autoSetupRemote = true
+
+[pull]
+  rebase = false
+
+[clean]
+  requireForce = false
+
+[merge]
+  conflictstyle = diff3

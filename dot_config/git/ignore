@@ -1,0 +1,8 @@
+# Direnv environment file
+.envrc
+
+# Obsidian files
+.obsidian/
+
+# Vim swap files
+*.swp

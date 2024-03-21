@@ -1,0 +1,16 @@
+[alias]
+  bicep = bisect
+  co = checkout
+  cb = checkout -b
+  ci = commit -v
+  cp = cherry-pick
+  st = status
+  br = branch -vv
+  df = diff
+  lg = log --graph --pretty=format:'%C(red)%h%Creset %C(green)%ad%Creset | %s%C(yellow)%d%Creset %C(bold blue)<%an>%Creset' --date=short
+  since = "!f() { git lg $1..HEAD; }; f"
+  last = "!f() { git lg --max-count $1; }; f"
+  pr = pull --rebase --ff-only
+  dfc = diff --cached
+  rob = "!f() { git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done }; f"
+  tags = tag --list --sort=-creatordate
