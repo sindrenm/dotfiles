@@ -1,10 +1,12 @@
 {{ if eq .chezmoi.os "linux" }}
+fish_add_path /home/sindre/.cargo/bin/
 fish_add_path /home/sindre/.nodenv/shims/
 fish_add_path /home/sindre/.pyenv/shims/
 fish_add_path /home/sindre/.rbenv/shims/
 fish_add_path /opt/android-sdk/platform-tools/
 fish_add_path /var/lib/snapd/snap/bin/
 {{ else if eq .chezmoi.os "darwin" }}
+fish_add_path /Users/sindre/.cargo/bin/
 fish_add_path /Users/sindre/.nodenv/shims/
 fish_add_path /Users/sindre/.pyenv/shims/
 fish_add_path /Users/sindre/.rbenv/shims/
