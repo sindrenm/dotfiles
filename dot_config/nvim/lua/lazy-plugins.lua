@@ -1,6 +1,11 @@
 require('lazy').setup({
   -- Color schemes
-  'doums/darcula',
+  {
+    "xiantang/darcula-dark.nvim",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+    },
+  },
 
   -- Core feature enhancements
   'tpope/vim-commentary',
