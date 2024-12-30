@@ -1,6 +1,6 @@
 require("lazy-init")
 require("lazy-plugins")
-require("theme")
+require("theme_transparent")
 
 -- Enable syntax highlighting
 vim.cmd [[ syntax enable ]]
