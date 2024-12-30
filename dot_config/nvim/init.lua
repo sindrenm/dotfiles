@@ -1,3 +1,4 @@
+require("gen-spell-files")
 require("lazy-init")
 require("lazy-plugins")
 require("theme_transparent")
