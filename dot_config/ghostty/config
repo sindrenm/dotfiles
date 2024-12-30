@@ -1,0 +1,3 @@
+config-file = config.font
+config-file = config.theme
+config-file = config.window
