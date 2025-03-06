@@ -1,0 +1,17 @@
+#waybar {
+  background-color: transparent;
+}
+
+#clock {
+  font-family: monospace;
+}
+
+#tray {
+}
+
+.module {
+  background-color: white;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
