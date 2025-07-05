@@ -35,3 +35,6 @@
 
 [merge]
   conflictstyle = diff3
+
+[rebase]
+  updateRefs = true
