@@ -1,6 +1,6 @@
-if type -q exa
-  alias l="exa --long --git"
-  alias ll="exa --all --long --git"
+if type -q eza
+  alias l="eza --long --git"
+  alias ll="eza --all --long --git"
 end
 
 if type -q git
