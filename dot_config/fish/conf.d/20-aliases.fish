@@ -1,6 +1,7 @@
 if type -q eza
-  alias l="eza --long --git"
-  alias ll="eza --all --long --git"
+  alias l="eza"
+  alias ll="eza --long --git --icons"
+  alias lt="eza --long --git --icons --tree"
 end
 
 if type -q git
