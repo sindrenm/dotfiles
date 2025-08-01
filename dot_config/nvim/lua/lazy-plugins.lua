@@ -25,6 +25,7 @@ require('lazy').setup({
   'tpope/vim-surround',
 
   -- Version control
+  'avm99963/vim-jjdescription',
   'gregsexton/gitv',
   'mhinz/vim-signify',
   'tpope/vim-fugitive',
