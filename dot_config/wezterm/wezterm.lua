@@ -1,9 +1,34 @@
 local wezterm = require 'wezterm'
-local config = {}
 
-config.color_scheme = 'JetBrains Darcula'
-config.font = wezterm.font('JetBrains Mono')
+local config = {
+  color_scheme = 'JetBrains Darcula',
+  font = wezterm.font('JetBrains Mono'),
 
-config.enable_tab_bar = false
+  enable_tab_bar = false,
+
+  initial_cols = 200,
+  initial_rows = 50,
+
+  window_decorations = "NONE",
+
+  window_frame = {
+    border_left_width = '2px',
+    border_right_width = '2px',
+    border_bottom_height = '2px',
+    border_top_height = '2px',
+    border_left_color = 'white',
+    border_right_color = 'white',
+    border_bottom_color = 'white',
+    border_top_color = 'white',
+  },
+
+  window_padding = {
+    left = "12px",
+    top = "8px",
+    right = "12px",
+    bottom = "8px",
+  },
+}
+
 
 return config
