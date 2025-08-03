@@ -1,29 +1,13 @@
 ## My Dotfiles with Chezmoi
 
-> [!warning]
-> Sensitive information, such as passwords, should be [excluded from this
-> repository](#ignoring-files) and managed separately using a secure password
-> manager.
-
 This repository stores my personal dotfiles, managed by the [Chezmoi][chezmoi]
 library. Chezmoi allows for easy configuration management across multiple
 machines.
 
-### Features
-
-* **Centralized Configuration:** Manage your dotfiles from a single Git
-  repository.
-* **Version Control:** Track changes to your dotfiles and revert to previous
-  versions if needed.
-* **Machine Agnostic:** Deploy your configuration across different machines
-  seamlessly.
-* **Templating:** Utilize templates with environment variables for personalized
-  configurations.
-
 ### Getting Started
 
 1. **Install Chezmoi:** Follow the installation guide for your operating system
-   on the Chezmoi website [Chezmoi website][chezmoi].
+   on the [Chezmoi website][chezmoi].
 2. **Clone this Repository:** Clone this repository to your local machine using
    Git.
 3. **Initialize Chezmoi:** Run `chezmoi init <username>` (replace `<username>`
