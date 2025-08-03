@@ -1,6 +1,0 @@
-window-height = 50
-window-width = 180
-
-window-inherit-font-size = false
-window-theme = system
-window-inherit-working-directory = true
