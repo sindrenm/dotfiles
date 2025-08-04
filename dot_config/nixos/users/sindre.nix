@@ -18,6 +18,7 @@
         btop
         chezmoi
         direnv
+        discord
         eza
         fd
         firefox
