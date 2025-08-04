@@ -11,6 +11,7 @@
         "wheel"
       ];
       packages = with pkgs; [
+        androidStudioPackages.canary
         azure-cli
         bat
         bitwarden-desktop
@@ -25,7 +26,6 @@
         git
         gnome-tweaks
         google-chrome
-        jetbrains-toolbox
         jujutsu
         kotlin
         lua-language-server
