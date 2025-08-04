@@ -37,6 +37,7 @@
         rbenv
         rust-analyzer
         rustup
+        slack
         starship
         stremio
         typst
