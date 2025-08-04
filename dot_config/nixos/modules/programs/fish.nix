@@ -6,6 +6,7 @@
       l = "eza";
       ll = "eza --long --git --icons";
       lt = "eza --long --git --icons --tree";
+      lt2 = "eza --long --git --icons --tree --level 2";
 
       g = "git";
 
