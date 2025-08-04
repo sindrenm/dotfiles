@@ -22,6 +22,18 @@
             ./users/sindre.nix
           ];
         };
+        work = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          modules = [
+            ./hosts/work/configuration.nix
+            ./modules/common.nix
+            ./modules/programs/fish.nix
+            ./modules/programs/neovim.nix
+            ./modules/services/display-manager.gnome.nix
+            ./modules/services/xserver.nix
+            ./users/sindre.nix
+          ];
+        };
       };
     };
 }
