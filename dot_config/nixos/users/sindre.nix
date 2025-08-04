@@ -43,6 +43,7 @@
         stremio
         typst
         vlc
+        vscode-langservers-extracted
         wezterm
         zoxide
         zulu
