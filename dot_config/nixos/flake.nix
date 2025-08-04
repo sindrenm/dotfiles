@@ -15,6 +15,7 @@
           modules = [
             ./hosts/home/configuration.nix
             ./modules/common.nix
+            ./modules/programs/adb.nix
             ./modules/programs/fish.nix
             ./modules/programs/neovim.nix
             ./modules/services/display-manager.gnome.nix
@@ -27,6 +28,7 @@
           modules = [
             ./hosts/work/configuration.nix
             ./modules/common.nix
+            ./modules/programs/adb.nix
             ./modules/programs/fish.nix
             ./modules/programs/neovim.nix
             ./modules/services/display-manager.gnome.nix
