@@ -28,6 +28,8 @@
         git
         gnome-tweaks
         google-chrome
+        jetbrains.idea-ultimate
+        jetbrains.rider
         jujutsu
         kotlin
         lua-language-server
