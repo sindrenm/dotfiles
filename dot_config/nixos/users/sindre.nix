@@ -35,6 +35,7 @@
         lua-language-server
         nerd-fonts.jetbrains-mono
         nil
+        nix-direnv
         nodenv
         pyenv
         rbenv
