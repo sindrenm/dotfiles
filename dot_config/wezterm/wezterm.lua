@@ -6,8 +6,8 @@ local config = {
 
   enable_tab_bar = false,
 
-  initial_cols = 200,
-  initial_rows = 50,
+  initial_cols = 150,
+  initial_rows = 40,
 
   window_decorations = "NONE",
 
