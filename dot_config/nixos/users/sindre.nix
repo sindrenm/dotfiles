@@ -45,6 +45,7 @@
         vlc
         vscode-langservers-extracted
         wezterm
+        yaml-language-server
         zoxide
         zulu
       ];
