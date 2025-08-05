@@ -15,6 +15,7 @@
           modules = [
             ./hosts/home/configuration.nix
             ./modules/common.nix
+            ./modules/nvidia.nix
             ./modules/programs/adb.nix
             ./modules/programs/fish.nix
             ./modules/programs/neovim.nix
@@ -28,6 +29,7 @@
           modules = [
             ./hosts/work/configuration.nix
             ./modules/common.nix
+            ./modules/nvidia.nix
             ./modules/programs/adb.nix
             ./modules/programs/fish.nix
             ./modules/programs/neovim.nix
