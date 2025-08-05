@@ -38,6 +38,7 @@
 
     environment.systemPackages = with pkgs; [
       fish
+      lshw
       wget
       wl-clipboard
     ];
