@@ -42,6 +42,7 @@
         slack
         starship
         stremio
+        taplo
         typst
         vlc
         vscode-langservers-extracted
