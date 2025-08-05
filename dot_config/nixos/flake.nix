@@ -35,6 +35,7 @@
             ./modules/programs/neovim.nix
             ./modules/services/display-manager.gnome.nix
             ./modules/services/xserver.nix
+            ./modules/tuxedo.nix
             ./users/sindre.nix
           ];
         };
