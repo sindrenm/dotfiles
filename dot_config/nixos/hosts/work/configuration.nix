@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 {
   imports = [ ./hardware-configuration.nix ];
 
@@ -6,6 +6,13 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+
+  # Nvidia configuration
+  hardware.nvidia.prime = {
+    # Make sure to use the correct Bus ID values for your system!
+    intelBusId = "PCI:00:02.0";
+    nvidiaBusId = "PCI:01:00.0";
+  };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
