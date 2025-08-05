@@ -39,6 +39,7 @@
     environment.systemPackages = with pkgs; [
       fish
       lshw
+      nix-tree
       wget
       wl-clipboard
     ];
