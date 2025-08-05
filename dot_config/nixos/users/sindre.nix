@@ -17,6 +17,7 @@
         bitwarden-desktop
         btop
         chezmoi
+        difftastic
         direnv
         discord
         eza
