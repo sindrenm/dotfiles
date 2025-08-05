@@ -38,7 +38,6 @@
         nodenv
         pyenv
         rbenv
-        rbenv
         rust-analyzer
         rustup
         slack
