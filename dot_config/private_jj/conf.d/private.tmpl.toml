@@ -1,0 +1,7 @@
+# Copy this file over to private.toml and edit its values
+
+[user]
+email = "<missing-email-address>"
+
+[signing]
+key = "<path-to-private-signing-key>"
