@@ -1,7 +1,4 @@
 fish/fish_variables
 git/private
-
-{{ if ne .chezmoi.os "linux" }}
 user-dirs.dirs
 user-dirs.locale
-{{ end }}
