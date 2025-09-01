@@ -1,8 +1,8 @@
-# Copy this file over to private.toml and edit its values
+# Copy this file over to ./private.toml and edit its values
 "$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
 
 [user]
-email = "<missing-email-address>"
+email = "your@email.addr"
 
 [signing]
-key = "/path/to/private/signing/key"
+key = "/path/to/signing-key.pub"
