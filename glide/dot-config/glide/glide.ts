@@ -17,3 +17,7 @@
 // Try typing `glide.` and see what you can do!
 
 glide.o.hint_size = "16px";
+
+// Remove bindings that mess with “enter search”
+glide.keymaps.del(["normal", "insert"], "<C-k>");
+glide.keymaps.del(["normal", "insert"], "<C-j>");
