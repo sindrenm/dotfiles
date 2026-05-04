@@ -1,0 +1,24 @@
+[Desktop Entry]
+Name=Glide Browser
+Comment=An extensible and keyboard-focused web browser built on Firefox
+Exec=/usr/bin/glide-bin %u
+Terminal=false
+Type=Application
+Icon=glide-bin
+StartupWMClass=glide-glide
+MimeType=application/json;application/pdf;application/rdf+xml;application/rss+xml;application/x-xpinstall;application/xhtml+xml;application/xml;audio/flac;audio/ogg;audio/webm;image/avif;image/gif;image/jpeg;image/png;image/svg+xml;image/webp;text/html;text/xml;video/ogg;video/webm;x-scheme-handler/chrome;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/mailto;
+Actions=new-window;new-private-window;open-profile-manager;
+X-GNOME-FullName=Glide Browser
+Categories=Network;WebBrowser;
+
+[Desktop Action new-window]
+Exec=/usr/bin/glide-bin --new-window %u
+Name=New Window
+
+[Desktop Action new-private-window]
+Exec=/usr/bin/glide-bin --private-window %u
+Name=New Private Window
+
+[Desktop Action open-profile-manager]
+Exec=/usr/bin/glide-bin --ProfileManager
+Name=Open Profile Manager
