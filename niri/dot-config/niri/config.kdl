@@ -82,31 +82,36 @@ binds {
   "Mod+Shift+Slash" { show-hotkey-overlay; }
 
   "Mod+Return" { spawn "kitty"; }
-  "Mod+Space" { spawn "fuzzel"; }
-  "Mod+Alt+L" { spawn "swaylock"; }
+  "Mod+Space" { spawn "vicinae" "toggle"; }
+  "Mod+Escape" { spawn "loginctl" "lock-session"; }
+  "Mod+Shift+Escape" { spawn "systemctl" "suspend"; }
 
   "XF86AudioRaiseVolume" allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05+"; }
   "XF86AudioLowerVolume" allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }
   "XF86AudioMute" allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
   "XF86AudioMicMute" allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+  "XF86MonBrightnessUp" allow-when-locked=true { spawn "brightnessctl" "s" "10%+"; }
+  "XF86MonBrightnessDown" allow-when-locked=true { spawn "brightnessctl" "s" "10%-"; }
+  "XF86AudioNext" allow-when-locked=true { spawn "playerctl" "next"; }
+  "XF86AudioPause" allow-when-locked=true { spawn "playerctl" "play-pause"; }
+  "XF86AudioPlay" allow-when-locked=true { spawn "playerctl" "play-pause"; }
+  "XF86AudioPrev" allow-when-locked=true { spawn "playerctl" "previous"; }
 
   "Mod+Q" { close-window; }
-  "Mod+E" { toggle-overview; }
+  "Mod+E" { spawn "nautilus"; }
+  "Mod+W" { spawn "set-wallpaper"; }
 
   // Change window focus using Vim keybindings
   "Mod+H" { focus-column-left; }
-  "Mod+J" { focus-window-or-workspace-down; }
-  "Mod+K" { focus-window-or-workspace-up; }
+  "Mod+J" { focus-window-down; }
+  "Mod+K" { focus-window-up; }
   "Mod+L" { focus-column-right; }
 
   // Move windows using Vim keybindings
   "Mod+Shift+H" { move-column-left; }
-  "Mod+Shift+J" { move-window-down-or-to-workspace-down; }
-  "Mod+Shift+K" { move-window-up-or-to-workspace-up; }
+  "Mod+Shift+J" { move-window-down; }
+  "Mod+Shift+K" { move-window-up; }
   "Mod+Shift+L" { move-column-right; }
-
-  "Mod+Alt+J" { move-workspace-down; }
-  "Mod+Alt+K" { move-workspace-up; }
 
   // Navigate to workspaces by number. Note that workspaces are dynamic, so
   // if one doesn't exist, we will move to the closest one.
@@ -139,10 +144,13 @@ binds {
   "Mod+Comma" { consume-or-expel-window-left; }
   "Mod+Period" { consume-or-expel-window-right; }
 
+  "Mod+O" { toggle-overview; }
   "Mod+R" { switch-preset-column-width; }
   "Mod+Shift+R" { switch-preset-window-width-back; }
-  "Mod+F" { maximize-column; }
-  "Mod+Shift+F" { fullscreen-window; }
+  "Mod+F" { switch-focus-between-floating-and-tiling; }
+  "Mod+Shift+F" { toggle-window-floating; }
+  "Mod+M" { maximize-column; }
+  "Mod+Shift+M" { fullscreen-window; }
 
   // Expand the focused column to fill up the remaining space not taken up
   // by other fully visible columns.
@@ -153,10 +161,10 @@ binds {
   "Mod+C" { center-column; }
 
   // Some finer width and height adjustments
-  "Mod+Minus" { set-column-width "-10%"; }
-  "Mod+Equal" { set-column-width "+10%"; }
-  "Mod+Shift+Minus" { set-window-height "-10%"; }
-  "Mod+Shift+Equal" { set-window-height "+10%"; }
+  "Mod+Ctrl+H" { set-column-width "-10%"; }
+  "Mod+Ctrl+L" { set-column-width "+10%"; }
+  "Mod+Ctrl+J" { set-window-height "+10%"; }
+  "Mod+Ctrl+K" { set-window-height "-10%"; }
 
   // Toggle currently focused window between being floating and tiled, and
   // also allow for switching focus between what's floating and what's
@@ -171,7 +179,7 @@ binds {
   // Screenshot actions. Note the workaround from
   // https://github.com/sodiboo/niri-flake/issues/922.
   "Print" { screenshot; }
-  "Ctrl+Print" { screenshot-screen; }
+  "Shift+Print" { screenshot-screen; }
   "Alt+Print" { screenshot-window; }
 
   // Applications such as remote-desktop clients and software KVM switches
@@ -179,8 +187,8 @@ binds {
   // here so they may, for example, forward the key presses as-is to a
   // remote machine. It's a good idea to bind an escape hatch to toggle the
   // inhibitor, so a buggy application can't hold your session hostage.
-  "Mod+Escape" allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+  "Mod+Ctrl+Escape" allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
   // Show a confirmation message and quit niri.
-  "Ctrl+Alt+Delete" { spawn "wlogout"; }
+  "Ctrl+Alt+Delete" { spawn "wleave" "--no-version-info"; }
 }
