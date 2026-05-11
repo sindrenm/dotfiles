@@ -1,0 +1,22 @@
+#!/usr/bin/env sh
+
+set -eu
+
+if command -v uwsm >/dev/null 2>&1 && uwsm check is-active hyprland >/dev/null 2>&1; then
+  exec uwsm stop
+fi
+
+if [ -n "${NIRI_SOCKET:-}" ] && command -v niri >/dev/null 2>&1; then
+  exec niri msg action quit --skip-confirmation
+fi
+
+if [ -n "${HYPRLAND_INSTANCE_SIGNATURE:-}" ] && command -v hyprctl >/dev/null 2>&1; then
+  exec hyprctl dispatch exit
+fi
+
+if [ -n "${XDG_SESSION_ID:-}" ] && command -v loginctl >/dev/null 2>&1; then
+  exec loginctl terminate-session "$XDG_SESSION_ID"
+fi
+
+echo "session-logout: no supported session manager or compositor detected" >&2
+exit 1

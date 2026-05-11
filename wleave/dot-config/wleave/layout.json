@@ -19,7 +19,7 @@
     },
     {
       "label": "logout",
-      "action": "uwsm stop",
+      "action": "session-logout",
       "text": "Log Out ",
       "keybind": "e"
     },

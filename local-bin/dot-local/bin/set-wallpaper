@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+exec "$HOME/.config/hypr/scripts/set-wallpaper.sh" "$@"
