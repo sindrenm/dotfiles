@@ -46,3 +46,10 @@ glide.keymaps.set("normal", "[t", () => {
 glide.keymaps.set("normal", "]t", () => {
   glide.excmds.execute("tab_next");
 });
+
+// Figma has its own extensive set of keymaps
+glide.autocmds.create("UrlEnter", /figma\.com/, async () => {
+  await glide.excmds.execute("mode_change ignore");
+
+  return () => glide.excmds.execute("mode_change normal");
+});
