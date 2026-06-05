@@ -33,6 +33,10 @@
       "rev": "25050e4ed39e628282831d4cbecb1850454ce915",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
+    "guh.nvim": {
+      "rev": "4f6673be4a51bee3b47198dd86c870b3c1b8c02b",
+      "src": "https://github.com/justinmk/guh.nvim"
+    },
     "hunk.nvim": {
       "rev": "c8a8e7b6973576f63e5bf39aa8338d7f37f4dc53",
       "src": "https://github.com/julienvincent/hunk.nvim"

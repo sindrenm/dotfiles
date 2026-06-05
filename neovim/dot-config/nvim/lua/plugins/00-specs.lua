@@ -14,6 +14,7 @@ vim.pack.add({
   { src = "https://github.com/j-hui/fidget.nvim" },
   { src = "https://github.com/jmbuhr/otter.nvim" },
   { src = "https://github.com/julienvincent/hunk.nvim" },
+  { src = "https://github.com/justinmk/guh.nvim" },
   { src = "https://github.com/lalitmee/codecompanion-spinners.nvim" },
   { src = "https://github.com/lewis6991/gitsigns.nvim" },
   { src = "https://github.com/lukas-reineke/indent-blankline.nvim" },
