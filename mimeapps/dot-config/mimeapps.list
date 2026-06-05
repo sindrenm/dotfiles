@@ -21,6 +21,8 @@ x-scheme-handler/http=glide-browser-bin.desktop;firefox-nightly.desktop;
 x-scheme-handler/https=glide-browser-bin.desktop;firefox-nightly.desktop;
 x-scheme-handler/jetbrains=jetbrainsd.desktop
 x-scheme-handler/claude-cli=claude-code-url-handler.desktop
+x-scheme-handler/antigravity=antigravity.desktop
+x-scheme-handler/slack=slack.desktop
 
 [Added Associations]
 application/x-extension-htm=glide-browser-bin.desktop;firefox-nightly.desktop;zen.desktop;firefox.desktop;
