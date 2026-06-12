@@ -15,13 +15,8 @@ pager = ":builtin"
 backend = "ssh"
 behavior = "own"
 
-[revset-aliases]
-"closest_bookmark(to)" = "heads(::to & bookmarks())"
-
 [aliases]
 retrunk = ["rebase", "-d", "trunk()"]
-tug = ["bookmark", "move", "--from", "closest_bookmark(@-)", "--to", "@"]
-tug- = ["bookmark", "move", "--from", "closest_bookmark(@-)", "--to", "@-"]
 
 [remotes.origin]
 auto-track-bookmarks = "glob:*"
