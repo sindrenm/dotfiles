@@ -13,8 +13,9 @@ alias ll = eza --long --git --icons;
 alias lt = eza --long --git --icons --tree;
 alias lt2 = eza --long --git --icons --tree --level 2;
 
-path add "~/.cargo/bin"
-path add "~/.local/bin"
+path add "/opt/android-sdk/platform-tools/"
+path add "~/.cargo/bin/"
+path add "~/.local/bin/"
 path add "~/.pyenv/shims/"
 
 # Source shell hooks
