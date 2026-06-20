@@ -1,0 +1,9 @@
+theme = "catppuccin-latte"
+mode = "auto"
+vcs = "jj"
+watch = false
+
+agent_notes = true
+line_numbers = true
+transparent_baackground = true
+wrap_lines = false
