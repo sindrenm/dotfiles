@@ -15,7 +15,7 @@ export def main [
     return (portal-color-scheme)
   }
 
-  let normalized = ($preference | str downcase | str trim)
+  let normalized = ($preference | str lowercase | str trim)
   let target = match $normalized {
     "dark" => { portal: "dark", gsettings: "prefer-dark" }
     "light" => { portal: "light", gsettings: "prefer-light" }
