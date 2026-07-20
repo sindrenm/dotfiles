@@ -36,6 +36,10 @@ hl.bind(mod .. " + CTRL + J", hl.dsp.window.resize({ x = 0, y = 20, relative = t
 hl.bind(mod .. " + CTRL + K", hl.dsp.window.resize({ x = 0, y = -20, relative = true }), { repeating = true })
 hl.bind(mod .. " + CTRL + L", hl.dsp.window.resize({ x = 20, y = 0, relative = true }), { repeating = true })
 
+-- Resize active window to predefined configs
+hl.bind(mod .. " + equal", hl.dsp.layout("colresize +conf"))
+hl.bind(mod .. " + minus", hl.dsp.layout("colresize -conf"))
+
 -- Switch workspaces with mod + [1-9]
 for i = 1, 9 do
   hl.bind(mod .. " + " .. i, hl.dsp.focus({ workspace = i }))
