@@ -19,15 +19,6 @@ hl.config({
     layout = "scrolling",
   },
 
-  scrolling = {
-    column_width = 0.5,
-    fullscreen_on_one_column = false,
-    explicit_column_widths = "0.333, 0.55, 0.667, 1.0",
-    wrap_swapcol = true,
-    direction = "right",
-    follow_focus = true,
-  },
-
   decoration = {
     rounding = 4,
     rounding_power = 10.0,
