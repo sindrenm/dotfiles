@@ -58,16 +58,14 @@ hl.bind(mod .. " + S", hl.dsp.workspace.toggle_special())
 hl.bind(mod .. " + SHIFT + S", hl.dsp.exec_cmd("~/.config/hypr/scripts/toggle-special-workspace.sh"))
 
 -- Screenshots (clipboard only)
-hl.bind("Print", hl.dsp.exec_cmd("~/.config/hypr/scripts/screenshot.sh region"))
-hl.bind("SUPER + Print", hl.dsp.exec_cmd("~/.config/hypr/scripts/screenshot.sh active"))
-hl.bind("SHIFT + Print", hl.dsp.exec_cmd("~/.config/hypr/scripts/screenshot.sh output"))
-hl.bind("ALT + Print", hl.dsp.exec_cmd("~/.config/hypr/scripts/screenshot.sh window"))
+hl.bind("Print", hl.dsp.exec_cmd("grimblast copy area --freeze"))
+hl.bind("SUPER + Print", hl.dsp.exec_cmd("grimblast copy active --freeze"))
+hl.bind("SHIFT + Print", hl.dsp.exec_cmd("grimblast copy output --freeze"))
 
 -- Screenshots (save to disk)
-hl.bind("CTRL + Print", hl.dsp.exec_cmd("~/.config/hypr/scripts/screenshot.sh region --save"))
-hl.bind("SUPER + CTRL + Print", hl.dsp.exec_cmd("~/.config/hypr/scripts/screenshot.sh active --save"))
-hl.bind("CTRL + SHIFT + Print", hl.dsp.exec_cmd("~/.config/hypr/scripts/screenshot.sh output --save"))
-hl.bind("ALT + CTRL + Print", hl.dsp.exec_cmd("~/.config/hypr/scripts/screenshot.sh window --save"))
+hl.bind("CTRL + Print", hl.dsp.exec_cmd("grimblast save area --freeze"))
+hl.bind("CTRL + SUPER + Print", hl.dsp.exec_cmd("grimblast save active --freeze"))
+hl.bind("CTRL + SHIFT + Print", hl.dsp.exec_cmd("grimblast save output --freeze"))
 
 -- Move/resize windows with mod + LMB/RMB and dragging
 hl.bind(mod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
