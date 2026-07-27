@@ -17,6 +17,10 @@
       "rev": "ab04cf7955b4f3133983ea402f7f3fc5e7d6154b",
       "src": "https://github.com/olimorris/codecompanion.nvim"
     },
+    "csvview.nvim": {
+      "rev": "5c22774c3ecc7f8883af5d143b366e45b1f0875d",
+      "src": "https://github.com/hat0uma/csvview.nvim"
+    },
     "diffview.nvim": {
       "rev": "4516612fe98ff56ae0415a259ff6361a89419b0a",
       "src": "https://github.com/sindrets/diffview.nvim"

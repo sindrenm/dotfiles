@@ -10,6 +10,7 @@ vim.pack.add({
   { src = "https://github.com/echasnovski/mini.nvim" },
   { src = "https://github.com/folke/lazydev.nvim" },
   { src = "https://github.com/folke/which-key.nvim" },
+  { src = "https://github.com/hat0uma/csvview.nvim" },
   { src = "https://github.com/igorlfs/nvim-dap-view" },
   { src = "https://github.com/j-hui/fidget.nvim" },
   { src = "https://github.com/jmbuhr/otter.nvim" },
