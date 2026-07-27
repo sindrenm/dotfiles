@@ -40,6 +40,9 @@ hl.bind(mod .. " + CTRL + L", hl.dsp.window.resize({ x = 20, y = 0, relative = t
 hl.bind(mod .. " + equal", hl.dsp.layout("colresize +conf"))
 hl.bind(mod .. " + minus", hl.dsp.layout("colresize -conf"))
 
+-- Center the current column
+hl.bind(mod .. " + C", hl.dsp.layout("center"))
+
 -- Switch workspaces with mod + [1-9]
 for i = 1, 9 do
   hl.bind(mod .. " + " .. i, hl.dsp.focus({ workspace = i }))
