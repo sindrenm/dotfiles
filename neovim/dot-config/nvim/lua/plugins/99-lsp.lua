@@ -40,6 +40,7 @@ vim.lsp.enable({
   "jsonls",
   "kotlin_lsp",
   "lua_ls",
+  "nixd",
   "nushell",
   "rust_analyzer",
   "ts_ls",
