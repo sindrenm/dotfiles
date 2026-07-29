@@ -31,6 +31,16 @@ vim.lsp.config("lua_ls", {
   end,
 })
 
+vim.lsp.config("nixd", {
+  settings = {
+    nixd = {
+      formatting = {
+        command = { "nixfmt" },
+      },
+    },
+  },
+});
+
 vim.lsp.enable({
   "csharp_ls",
   "cssls",
