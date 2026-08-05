@@ -14,5 +14,6 @@
 /.jj-workspaces/
 
 **/.claude/settings.local.json
-.codex
 .antigravitycli/
+.claude/
+.codex
