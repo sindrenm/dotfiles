@@ -14,7 +14,7 @@
       "src": "https://github.com/lalitmee/codecompanion-spinners.nvim"
     },
     "codecompanion.nvim": {
-      "rev": "2b959b2bf5fdb13e3b333c078ba549996e477b7c",
+      "rev": "f1afd02537c68b3dd6e0d41d4adda5ef538e0473",
       "src": "https://github.com/olimorris/codecompanion.nvim"
     },
     "csvview.nvim": {
@@ -70,7 +70,7 @@
       "src": "https://github.com/OXY2DEV/markview.nvim"
     },
     "mini.nvim": {
-      "rev": "8bf5c57bc82dd590932faa41bfde9fd6d40a9433",
+      "rev": "629bf6792187e11b4829411c1648f86f28df3963",
       "src": "https://github.com/echasnovski/mini.nvim"
     },
     "nui.nvim": {
@@ -78,7 +78,7 @@
       "src": "https://github.com/MunifTanjim/nui.nvim"
     },
     "nvim": {
-      "rev": "79e2049a0fdf7ec840f8463fe1d962c94493196b",
+      "rev": "edefef779ab08ce1a4a404713e3012b0d202bd35",
       "src": "https://github.com/catppuccin/nvim"
     },
     "nvim-dap": {
@@ -86,7 +86,7 @@
       "src": "https://github.com/mfussenegger/nvim-dap"
     },
     "nvim-dap-view": {
-      "rev": "eda349094a87c6ff5a9c75bbbc88bce45836ae08",
+      "rev": "43a2ccf5618ea26a9b11575ff18ded1cc82746bf",
       "src": "https://github.com/igorlfs/nvim-dap-view"
     },
     "nvim-jump": {
@@ -94,7 +94,7 @@
       "src": "https://github.com/yorickpeterse/nvim-jump"
     },
     "nvim-lspconfig": {
-      "rev": "1c0d8f70dbc8827263eedc3cf7021ceba0f68689",
+      "rev": "43ed3797b266e1ee8d222e491379ad471c9d3146",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -106,12 +106,12 @@
       "src": "https://github.com/rcarriga/nvim-notify"
     },
     "nvim-treesitter": {
-      "rev": "7b6cc8949f9999c5ed91436cbe24aa5f99c42025",
+      "rev": "c9f9ed6c1892f629ea399f4ee7905f2686fa13f2",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'main'"
     },
     "nvim-treesitter-context": {
-      "rev": "b311b30818951d01f7b4bf650521b868b3fece16",
+      "rev": "f3061339b8eaf9fda873600bc425b8d2d8502533",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter-context"
     },
     "nvim-treesitter-textobjects": {
@@ -136,7 +136,7 @@
       "src": "https://github.com/HiPhish/rainbow-delimiters.nvim"
     },
     "smart-splits.nvim": {
-      "rev": "89ab35b282783efc1c49deadd72c22afd5eac356",
+      "rev": "0fe3bbd99d48458ad188c4c262c31049fa9b018c",
       "src": "https://github.com/mrjones2014/smart-splits.nvim"
     },
     "smartcolumn.nvim": {
