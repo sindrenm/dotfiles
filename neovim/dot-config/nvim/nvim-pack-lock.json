@@ -14,7 +14,7 @@
       "src": "https://github.com/lalitmee/codecompanion-spinners.nvim"
     },
     "codecompanion.nvim": {
-      "rev": "41aac78df89faa428eb1066b758f4e56c4c47662",
+      "rev": "7116eecc646c3f33d755beeb922126995bbd41e1",
       "src": "https://github.com/olimorris/codecompanion.nvim"
     },
     "csvview.nvim": {
@@ -50,7 +50,7 @@
       "src": "https://github.com/lukas-reineke/indent-blankline.nvim"
     },
     "jj.nvim": {
-      "rev": "5119dd3f6d4c5a3b8a7a9732b24e6b4c2f2e717c",
+      "rev": "cfcd8fe8316ecc427dc98379e24e0605e91ea3e4",
       "src": "https://github.com/NicolasGB/jj.nvim"
     },
     "kitty-scrollback.nvim": {
@@ -70,11 +70,11 @@
       "src": "https://github.com/OXY2DEV/markview.nvim"
     },
     "mini.nvim": {
-      "rev": "e58ad4b0c9e9376096b9704f98fc00d4c9448870",
+      "rev": "8d86a057fa14681cf7cab74ea7cba894a0abe14f",
       "src": "https://github.com/echasnovski/mini.nvim"
     },
     "nui.nvim": {
-      "rev": "a25dd472316d806eb38a5dd667c2e40da5570c75",
+      "rev": "10fc361835c856ba4233ef5ea135b919bf3dce97",
       "src": "https://github.com/MunifTanjim/nui.nvim"
     },
     "nvim": {
@@ -94,7 +94,7 @@
       "src": "https://github.com/yorickpeterse/nvim-jump"
     },
     "nvim-lspconfig": {
-      "rev": "6fc041976833841cc9d991f45193533fe2a2e09b",
+      "rev": "31e3c02ac84f4766383930f46dfabfea4d315cf8",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -106,7 +106,7 @@
       "src": "https://github.com/rcarriga/nvim-notify"
     },
     "nvim-treesitter": {
-      "rev": "074aa4422bf029908338e855d0c0f71470a971bb",
+      "rev": "8b98b4470eb326f1c7b50dae79f8c963568e5720",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'main'"
     },
@@ -136,7 +136,7 @@
       "src": "https://github.com/HiPhish/rainbow-delimiters.nvim"
     },
     "smart-splits.nvim": {
-      "rev": "289971cfdbc7f7b1c91670a228b239d870130af7",
+      "rev": "5e92431aa7f5e618c2f6825f682df6d94f6e0a02",
       "src": "https://github.com/mrjones2014/smart-splits.nvim"
     },
     "smartcolumn.nvim": {
