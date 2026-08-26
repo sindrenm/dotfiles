@@ -23,7 +23,11 @@ path add "~/.pyenv/shims/"
 mkdir ($nu.data-dir | path join "vendor/autoload")
 
 let shell_hooks = {
-  atuin: { atuin init nu },
+  # atuin names both its ctrl-r and up keybindings "atuin", which triggers
+  # nushell's shared_keybindings_name warning; rename the up-key one.
+  #
+  # Tempoary until https://github.com/atuinsh/atuin/pull/3975 is released.
+  atuin: { atuin init nu | str replace -r 'name: atuin(\s+modifier: none)' 'name: atuin_up$1' },
   carapace: { carapace _carapace nushell },
   ha: { ha completions nushell },
   starship: { starship init nu },
